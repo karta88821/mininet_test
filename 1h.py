@@ -1,12 +1,13 @@
 from mininet.net import Mininet
+from mininet.topo import Topo
 from mininet.cli import CLI
 from mininet.log import setLogLevel, info
 
 def emptyNet():
 
     "Create an empty network and add nodes to it."
-
-    net = Mininet()
+    topo = SingleSwitchTopo(n=2)
+    net = Mininet(topo=topo)
 
     info( '*** Adding controller\n' )
 
