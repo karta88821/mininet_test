@@ -10,13 +10,10 @@ def emptyNet():
     net = Mininet( controller=Controller )
 
     info( '*** Adding controller\n' )
-    //net.addController( 'c0' )
 
     info( '*** Adding hosts\n' )
-    h1 = net.addHost( 'h1', ip='10.0.0.1' ) //client
-    h2 = net.addHost( 'h2', ip='10.0.0.2' ) //server
-    //h3 = net.addHost( 'h3', ip='10.0.0.3' )
-    //h4 = net.addHost( 'h4', ip='10.0.0.4' )
+    h1 = net.addHost( 'h1', ip='10.0.0.1' )
+    h2 = net.addHost( 'h2', ip='10.0.0.2' ) 
 
     info( '*** Adding switch\n' )
     s1 = net.addSwitch( 's1' )
