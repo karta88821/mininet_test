@@ -1,5 +1,4 @@
 from mininet.net import Mininet
-from mininet.node import Controller
 from mininet.cli import CLI
 from mininet.log import setLogLevel, info
 
@@ -7,7 +6,7 @@ def emptyNet():
 
     "Create an empty network and add nodes to it."
 
-    net = Mininet( controller=Controller )
+    net = Mininet()
 
     info( '*** Adding controller\n' )
 
